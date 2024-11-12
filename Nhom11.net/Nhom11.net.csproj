@@ -54,7 +54,6 @@
       <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectionDB.cs" />
-    <Compile Include="DocGia.cs" />
     <Compile Include="frmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>

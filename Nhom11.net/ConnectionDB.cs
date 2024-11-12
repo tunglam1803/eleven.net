@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab9
+namespace Nhom11.net
 {
     internal class ConnectionDB
     {
@@ -15,7 +15,7 @@ namespace Lab9
 
         public void openConnection()
         {
-            string ckn = @"Server=DESKTOP-0SFRE8R;Database=qlThuVien;Integrated Security=True";
+            string ckn = @"Server=DESKTOP-0SFRE8R;Database=QuanLyLapTop;Integrated Security=True";
             conn = new SqlConnection(ckn);
             conn.Open();
         }
@@ -139,6 +139,34 @@ namespace Lab9
                 closeConnection();
             }
             return kt;
+        }
+
+        public string getFieldValue(string sql)
+        {
+            string ma = "";
+            try
+            {
+                openConnection();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            ma = dr.GetValue(0).ToString();
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                closeConnection();
+            }
+            return ma;
         }
     }
 }
