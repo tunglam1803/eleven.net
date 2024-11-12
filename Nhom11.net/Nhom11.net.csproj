@@ -46,14 +46,112 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BaoCaoThongKe.cs" />
+    <Compile Include="frmBaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmBaoCaoThongKe.Designer.cs">
+      <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionDB.cs" />
+    <Compile Include="DocGia.cs" />
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs" />
+    <Compile Include="KhachHang.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="PhieuNhap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThietBi.Designer.cs">
+      <DependentUpon>frmThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThietBi.cs" />
+    <Compile Include="TKBCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKBCTK.Designer.cs">
+      <DependentUpon>TKBCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKHoaDon.Designer.cs">
+      <DependentUpon>TKHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKKhachHang.Designer.cs">
+      <DependentUpon>TKKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKNhanVien.Designer.cs">
+      <DependentUpon>TKNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKPhieuNhap.Designer.cs">
+      <DependentUpon>TKPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKThietBi.Designer.cs">
+      <DependentUpon>TKThietBi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBaoCaoThongKe.resx">
+      <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +161,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmThietBi.resx">
+      <DependentUpon>frmThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKBCTK.resx">
+      <DependentUpon>TKBCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKHoaDon.resx">
+      <DependentUpon>TKHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKKhachHang.resx">
+      <DependentUpon>TKKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKNhanVien.resx">
+      <DependentUpon>TKNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKPhieuNhap.resx">
+      <DependentUpon>TKPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKThietBi.resx">
+      <DependentUpon>TKThietBi.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
