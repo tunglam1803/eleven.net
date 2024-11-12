@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\nhom11.net\\docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|c:\\users\\tunglampc\\source\\repos\\nhom11.net\\nhom11.net\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B07890-3C2D-4483-8E94-530CA17CB5A4}|Nhom11.net\\Nhom11.net.csproj|solutionrelative:nhom11.net\\connectiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,14 +67,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Form1.cs",
-              "RelativeDocumentMoniker": "Nhom11.net\\Form1.cs",
-              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Form1.cs [Design]",
-              "RelativeToolTip": "Nhom11.net\\Form1.cs [Design]",
+              "Title": "frmNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\frmNhanVien.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\frmNhanVien.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\frmNhanVien.cs [Design]",
+              "RelativeToolTip": "Nhom11.net\\frmNhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T10:33:25.284Z",
+              "WhenOpened": "2024-11-12T14:13:31.568Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\frmKhachHang.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\frmKhachHang.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\frmKhachHang.cs [Design]",
+              "RelativeToolTip": "Nhom11.net\\frmKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:13:28.379Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Menu.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\Menu.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Menu.cs",
+              "RelativeToolTip": "Nhom11.net\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:07:14.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Menu.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\Menu.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\Menu.cs [Design]",
+              "RelativeToolTip": "Nhom11.net\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:07:10.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DocGia.cs",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\DocGia.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\DocGia.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\DocGia.cs",
+              "RelativeToolTip": "Nhom11.net\\DocGia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:20:36.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConnectionDB.cs",
+              "DocumentMoniker": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\ConnectionDB.cs",
+              "RelativeDocumentMoniker": "Nhom11.net\\ConnectionDB.cs",
+              "ToolTip": "C:\\Users\\TungLamPC\\source\\repos\\Nhom11.net\\Nhom11.net\\ConnectionDB.cs",
+              "RelativeToolTip": "Nhom11.net\\ConnectionDB.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T13:38:57.251Z",
+              "EditorCaption": ""
             }
           ]
         },

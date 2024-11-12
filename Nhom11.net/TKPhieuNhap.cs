@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nhom11.net
 {
-    public partial class Form1 : Form
+    public partial class TKPhieuNhap : Form
     {
-        public Form1()
+        public TKPhieuNhap()
         {
             InitializeComponent();
         }
