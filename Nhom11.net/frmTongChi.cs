@@ -11,13 +11,14 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Nhom11.net
 {
-    public partial class frmBaoCaoThongKe : Form
+    public partial class frmTongChi : Form
     {
-        BaoCaoThongKe bctk;
-        public frmBaoCaoThongKe()
+        BaoCaoChiTieu bctk;
+
+        public frmTongChi()
         {
             InitializeComponent();
-            bctk = new BaoCaoThongKe();
+            bctk = new BaoCaoChiTieu();
             ThanhTien();
         }
 
@@ -48,7 +49,12 @@ namespace Nhom11.net
             start = nam + "-" + thang + "-01";
             end = nam1 + "-" + thang1 + "-30";
             dataGridViewThongKe.DataSource = bctk.GetThongKe(start, end);
-            frmBaoCaoThongKe_Load(sender, e);
+            frmTongChi_Load(sender, e);
+        }
+
+        private void frmTongChi_Load(object sender, EventArgs e)
+        {
+            ThanhTien();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,7 +64,7 @@ namespace Nhom11.net
             Excel.Workbook workbook = excelApp.Workbooks.Add(Type.Missing);
             Excel.Worksheet worksheet = workbook.Sheets[1];
             worksheet = workbook.ActiveSheet;
-            worksheet.Name = "BaoCaoThongKe";
+            worksheet.Name = "BaoCaoChiTIeu";
 
             try
             {
@@ -107,11 +113,6 @@ namespace Nhom11.net
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void frmBaoCaoThongKe_Load(object sender, EventArgs e)
-        {
-            ThanhTien();
         }
     }
 }

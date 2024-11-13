@@ -65,12 +65,6 @@ namespace Nhom11.net
             ShowChildForm(frm);
         }
 
-        private void báoCáoThốngKêToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmBaoCaoThongKe frm = new frmBaoCaoThongKe();
-            ShowChildForm(frm);
-        }
-
         private void thồngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TKNhanVien frm = new TKNhanVien();
@@ -104,6 +98,18 @@ namespace Nhom11.net
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void báoCáoDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoThongKe frm = new frmBaoCaoThongKe();
+            ShowChildForm(frm);
+        }
+
+        private void báoCáoChiTiêuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTongChi frm = new frmTongChi();
+            ShowChildForm(frm);
         }
     }
 }

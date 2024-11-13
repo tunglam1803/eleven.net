@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCaoChiTieu.cs" />
     <Compile Include="BaoCaoThongKe.cs" />
     <Compile Include="frmBaoCaoThongKe.cs">
       <SubType>Form</SubType>
@@ -54,7 +59,6 @@
       <DependentUpon>frmBaoCaoThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectionDB.cs" />
-    <Compile Include="DocGia.cs" />
     <Compile Include="frmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +102,11 @@
       <DependentUpon>frmThietBi.cs</DependentUpon>
     </Compile>
     <Compile Include="ThietBi.cs" />
-    <Compile Include="TKBCTK.cs">
+    <Compile Include="frmTongChi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TKBCTK.Designer.cs">
-      <DependentUpon>TKBCTK.cs</DependentUpon>
+    <Compile Include="frmTongChi.Designer.cs">
+      <DependentUpon>frmTongChi.cs</DependentUpon>
     </Compile>
     <Compile Include="TKHoaDon.cs">
       <SubType>Form</SubType>
@@ -164,8 +168,8 @@
     <EmbeddedResource Include="frmThietBi.resx">
       <DependentUpon>frmThietBi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TKBCTK.resx">
-      <DependentUpon>TKBCTK.cs</DependentUpon>
+    <EmbeddedResource Include="frmTongChi.resx">
+      <DependentUpon>frmTongChi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TKHoaDon.resx">
       <DependentUpon>TKHoaDon.cs</DependentUpon>
@@ -182,6 +186,7 @@
     <EmbeddedResource Include="TKThietBi.resx">
       <DependentUpon>TKThietBi.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
