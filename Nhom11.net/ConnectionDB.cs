@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab9
+namespace Nhom11.net
 {
     internal class ConnectionDB
     {
@@ -15,7 +15,7 @@ namespace Lab9
 
         public void openConnection()
         {
-            string ckn = @"Server=DESKTOP-0SFRE8R;Database=qlThuVien;Integrated Security=True";
+            string ckn = @"Data Source=DESKTOP-8KHVSP4\MYSQL;Initial Catalog=QuanLyLapTop;Integrated Security=True;Encrypt=True";
             conn = new SqlConnection(ckn);
             conn.Open();
         }
