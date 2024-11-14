@@ -13,12 +13,15 @@ namespace Nhom11.net
     public partial class frmHoaDon : Form
     {
         HoaDon hd;
+
         public frmHoaDon()
         {
             InitializeComponent();
             txtTenKH.Enabled = false;
             txtTenTB.Enabled = false;
             txtGiaBan.Enabled = false;
+            btnLuu.Enabled = false;
+            btnBoQua.Enabled = false;
             txtMaHD.Focus();
             LoadData();
             ThanhTien();
@@ -91,7 +94,10 @@ namespace Nhom11.net
         {
             string str, str1;
             if (cboMaKH.Text == "")
+            {
                 txtTenKH.Text = "";
+                txtGiaBan.Text = "";
+            } 
             str = "SELECT TenTB FROM ThietBi where MaTB = N'" + cboMaTB.Text + "'";
             str1 = "SELECT GiaBan FROM ThietBi where MaTB = N'" + cboMaTB.Text + "'";
             txtTenTB.Text = hd.GetFieldVaLue(str);
@@ -136,6 +142,7 @@ namespace Nhom11.net
                 MessageBox.Show("Chưa nhập đủ thông tin!");
                 return;
             }
+
             string mahd = txtMaHD.Text.Trim();
             string makh = cboMaKH.Text.Trim();
             string ngayban = dtpNgayBan.Value.ToString();
@@ -143,6 +150,7 @@ namespace Nhom11.net
             int soluong = Convert.ToInt32(txtSoLuong.Text);
             double giaban = Convert.ToDouble(txtGiaBan.Text);
             string ghichu = txtGhiChu.Text;
+
             if (hd.ExistMa(mahd))
             {
                 MessageBox.Show("Mã hóa đơn đã tồn tại!");
@@ -153,9 +161,9 @@ namespace Nhom11.net
                 hd.CreateHoaDon(mahd, makh, ngayban, matb, soluong, giaban, ghichu);
                 LoadData();
                 ClearText();
-                MessageBox.Show("Thêm dữ liệu thành công!");
                 txtMaHD.Focus();
                 frmHoaDon_Load(sender, e);
+                MessageBox.Show("Thêm hóa đơn có mã " + mahd + " thành công!");
             }
         }
 
@@ -167,6 +175,7 @@ namespace Nhom11.net
                 {
                     hd.DeleteHoaDon(txtMaHD.Text, cboMaTB.Text);
                     LoadData();
+                    frmHoaDon_Load(sender, e);
                     ClearText();
                 }
             }
@@ -174,11 +183,45 @@ namespace Nhom11.net
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            if (txtMaHD.Text.Trim() == "")
+            {
+                MessageBox.Show("Chưa chọn mã hóa đơn cần sửa!");
+                return;
+            }
+            if (!hd.ExistMa(txtMaHD.Text.Trim()))
+            {
+                MessageBox.Show("Mã hóa đơn không tồn tại!");
+                return;
+            }
+
+            btnLuu.Enabled = true;
+            btnBoQua.Enabled = true;
+            btnThem.Enabled = false;
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            txtMaHD.Enabled = false;
+            btnTk.Enabled = false;
+        }
+
+        private void btnBoQua_Click(object sender, EventArgs e)
+        {
+            btnLuu.Enabled = false;
+            btnBoQua.Enabled = false;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
+            txtMaHD.Enabled = true;
+            btnTk.Enabled = true;
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
             if (!KtRong())
             {
                 MessageBox.Show("Chưa nhập đủ thông tin!");
                 return;
             }
+
             string mahd = txtMaHD.Text.Trim();
             string makh = cboMaKH.Text.Trim();
             string ngayban = dtpNgayBan.Value.ToString();
@@ -186,26 +229,23 @@ namespace Nhom11.net
             int soluong = Convert.ToInt32(txtSoLuong.Text);
             double giaban = Convert.ToDouble(txtGiaBan.Text);
             string ghichu = txtGhiChu.Text;
-            if (txtMaHD.Text.Trim() == "")
-            {
-                MessageBox.Show("Chưa chọn sách cần sửa!");
-                return;
-            }
-            if (!hd.ExistMa(mahd))
-            {
-                MessageBox.Show("Mã độc giả không tồn tại!");
-                return;
-            }
-            else
-            {
-                hd.UpdateHoaDon(mahd, makh, ngayban);
-                hd.UpdateHoaDonTB(mahd, matb, soluong, giaban, ghichu);
-                LoadData();
-                ClearText();
-                MessageBox.Show("Đã sửa thông tin độc giả có mã " + mahd + " thành công!");
-                txtMaHD.Focus();
-                frmHoaDon_Load(sender, e);
-            }
+
+            hd.UpdateHoaDon(mahd, makh, ngayban);
+            hd.UpdateHoaDonTB(mahd, matb, soluong, giaban, ghichu);
+            LoadData();
+            ClearText();
+
+            btnLuu.Enabled = false;
+            btnBoQua.Enabled = false;
+            btnThem.Enabled = true;
+            btnXoa.Enabled = true;
+            btnSua.Enabled = true;
+            txtMaHD.Enabled = true;
+            btnTk.Enabled = true;
+
+            txtMaHD.Focus();
+            frmHoaDon_Load(sender, e);
+            MessageBox.Show("Đã sửa thông tin hóa đơn có mã " + mahd + " thành công!");
         }
 
         private void btnTk_Click(object sender, EventArgs e)

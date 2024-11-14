@@ -60,6 +60,7 @@ namespace Nhom11.net
             {
                 dataGridView1.DataSource = hd.GetHoaDonWithMaTB(tk);
             }
+            TKHoaDon_Load(sender, e);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

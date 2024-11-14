@@ -48,12 +48,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnTk = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.mhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nb = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +59,11 @@
             this.gb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnBoQua = new System.Windows.Forms.Button();
+            this.btnTk = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -255,19 +257,9 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnTk
-            // 
-            this.btnTk.Location = new System.Drawing.Point(599, 381);
-            this.btnTk.Name = "btnTk";
-            this.btnTk.Size = new System.Drawing.Size(101, 33);
-            this.btnTk.TabIndex = 15;
-            this.btnTk.Text = "Tìm kiếm";
-            this.btnTk.UseVisualStyleBackColor = true;
-            this.btnTk.Click += new System.EventHandler(this.btnTk_Click);
-            // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(318, 381);
+            this.btnSua.Location = new System.Drawing.Point(285, 381);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(101, 33);
             this.btnSua.TabIndex = 16;
@@ -277,7 +269,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(178, 381);
+            this.btnXoa.Location = new System.Drawing.Point(157, 381);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(101, 33);
             this.btnXoa.TabIndex = 17;
@@ -301,32 +293,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1001, 195);
+            this.dataGridView1.Size = new System.Drawing.Size(1001, 203);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(35, 381);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(101, 33);
-            this.btnThem.TabIndex = 18;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(377, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 29);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "THÔNG TIN HÓA ĐƠN";
             // 
             // mhd
             // 
@@ -391,14 +360,69 @@
             this.gc.Name = "gc";
             this.gc.Width = 125;
             // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(30, 381);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(101, 33);
+            this.btnThem.TabIndex = 18;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(377, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 29);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "THÔNG TIN HÓA ĐƠN";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(413, 381);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(101, 33);
+            this.btnLuu.TabIndex = 16;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnBoQua
+            // 
+            this.btnBoQua.Location = new System.Drawing.Point(541, 381);
+            this.btnBoQua.Name = "btnBoQua";
+            this.btnBoQua.Size = new System.Drawing.Size(101, 33);
+            this.btnBoQua.TabIndex = 16;
+            this.btnBoQua.Text = "Bỏ qua";
+            this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
+            // 
+            // btnTk
+            // 
+            this.btnTk.Location = new System.Drawing.Point(712, 381);
+            this.btnTk.Name = "btnTk";
+            this.btnTk.Size = new System.Drawing.Size(101, 33);
+            this.btnTk.TabIndex = 15;
+            this.btnTk.Text = "Tìm kiếm";
+            this.btnTk.UseVisualStyleBackColor = true;
+            this.btnTk.Click += new System.EventHandler(this.btnTk_Click);
+            // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 656);
+            this.ClientSize = new System.Drawing.Size(1027, 653);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnTk);
+            this.Controls.Add(this.btnBoQua);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dataGridView1);
@@ -407,7 +431,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmHoaDon";
-            this.Text = "HoaDon";
+            this.Text = "Thông tin hóa đơn";
             this.Load += new System.EventHandler(this.frmHoaDon_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -428,7 +452,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnTk;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -453,5 +476,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gb;
         private System.Windows.Forms.DataGridViewTextBoxColumn tt;
         private System.Windows.Forms.DataGridViewTextBoxColumn gc;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnBoQua;
+        private System.Windows.Forms.Button btnTk;
     }
 }
